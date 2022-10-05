@@ -4,6 +4,8 @@
 
 This is a library written in C that can be used to measure the execution time of pieces of C code which run in the nanosecond range. The program outputs how many iterations were run, the average run time for the piece of code, and the total time taken to run the benchmark.
 
+Video demonstration: https://youtu.be/DWEnA68SNE4
+
 ## Motivation
 
 My motivation for this project was CS50's speller problem, where the goal is to create a spell-checking program that runs as fast as possible. Students can compete for the quickest run time on the Big Board, which times how long the program takes. However, the Big Board only shows the run times for the functions in the program and it is very slow compared to running the program locally, and it is hard to know the exact time it takes for small snippets of code to run. Therefore, I created this library to measure the execution time of pieces of code. Using this library, it is possible to analyze the individual parts of the functions to know which pieces of code run slowly and need to be improved. This tool helped me to go from roughly rank #300 out of 5000 students who submitted to the Big Board to [rank #6](https://speller.cs50.net/cs50/problems/2020/x/challenges/speller#user/ryawa) after a few months of optimizing. It is also my final project for the course.
